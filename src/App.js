@@ -52,9 +52,18 @@ export default function Portfolio() {
           <div className="logo">Hari</div>
 
           {/* 3 dots button */}
-          <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {/* <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
             <i className="fas fa-ellipsis-v"></i>
-          </div>
+          </div> */}
+          <div
+  className={`menu-toggle ${menuOpen ? "active" : ""}`}
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
 
           <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
             <li>
@@ -80,7 +89,7 @@ export default function Portfolio() {
         {/* Hero */}
         <section id="home" className="hero">
           <div className="profile-pic">
-             <img src={profilePic} alt="Description of the image" />
+             <img src={profilePic} alt="Hari hara sudhan M" />
           </div>
           <h1>Hari hara sudhan M</h1>
           <p className="tagline">CSE Student | Aspiring Software Developer</p>

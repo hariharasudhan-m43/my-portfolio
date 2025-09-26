@@ -352,6 +352,7 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+    color: white;
   }
 
   .nav-links {
@@ -366,7 +367,12 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
-
+.nav-links a {
+  text-decoration: none;
+  color: #2d3748;   /* 👈 default color */
+  transition: color 0.3s;
+  font-weight: 500;
+}
   .nav-links.active {
     display: flex;
   }
@@ -426,5 +432,50 @@ footer {
   .about h2,
   .contact h2 {
     font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+.menu-toggle {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: white;  /* line color */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animate to cross when active */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0; /* hide middle line */
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Show menu toggle on mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
   }
 }
