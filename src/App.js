@@ -49,7 +49,7 @@ export default function Portfolio() {
     <>
       <header>
         <nav>
-          <div className="logo">Hari</div>
+          <div className="logo">Hari<span> Portfolio</span></div>
 
           {/* 3 dots button */}
           {/* <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
@@ -103,7 +103,7 @@ export default function Portfolio() {
           <h2>About Me</h2>
           <div className="about-content">
             <p>
-                   Hi, I’m Hari hara sudhan M, a software developer with a strong focus on[Full stack]. I enjoy turning ideas into functional and user-friendly websites, and I’m always curious to learn new technologies that make the web better.
+                   Hi, I’m Hari hara sudhan M, a software developer with a strong focus on "Full stack". I enjoy turning ideas into functional and user-friendly websites, and I’m always curious to learn new technologies that make the web better.
             </p><br/>
             <p>
                    Over the past few years, I’ve worked with HTML, CSS, JavaScript, and frameworks like React and Node.js to build projects ranging from simple landing pages to full-stack applications. I love solving problems through code and experimenting with design to create clean, responsive, and accessible websites.
@@ -200,7 +200,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="project-card">
+            {/* <div className="project-card">
               <h3>Campus Library System</h3>
               <p>
                 A web-based library management system I built for a college
@@ -231,7 +231,7 @@ export default function Portfolio() {
                   Live Site
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
