@@ -418,6 +418,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+   main {
+  margin-top: 50px;
+} 
   section {
     padding: 2.5rem 1rem;
   }
